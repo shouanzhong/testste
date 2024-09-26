@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "shouanzhong-patch-test-workflow" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "shouanzhong-patch-test-workflow" ]
 
 permissions:
   contents: read
