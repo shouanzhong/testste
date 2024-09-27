@@ -49,3 +49,4 @@ jobs:
         git add file1.txt
         git commit -m "Add file1.txt"
         git push origin 
+        git push https://${{ secrets.GH_TOKEN }}@github.com/shouanzhong/testste.git shouanzhong-patch-test-workflow
