@@ -48,7 +48,7 @@ jobs:
     # 更新仓库
     - name: Update repo
       run: |
-        git add .
+        git add file1.txt
         git commit -m "auto update"
-        git push -u origin
+        git push -u origin shouanzhong-patch-test-workflow
 
