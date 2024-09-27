@@ -44,7 +44,7 @@ jobs:
 
     - name: Commit and push if changed
       run: |
-        git checkout -b dev
+        git checkout -b shouanzhong-patch-test-workflow
         git add file1.txt
         git commit -m "Add file1.txt"
         git push origin dev
