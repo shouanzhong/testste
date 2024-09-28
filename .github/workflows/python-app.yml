@@ -8,6 +8,8 @@ on:
     branches: [ "shouanzhong-patch-test-workflow" ]
   pull_request:
     branches: [ "shouanzhong-patch-test-workflow" ]
+  schedule:
+    - cron: "0 4 * * *"
 
 permissions:
   contents: write
