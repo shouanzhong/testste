@@ -53,6 +53,6 @@ jobs:
       run: |
         git add file1.txt
         git commit -m "auto update"
-        git pull --rebase
+        git pull --rebase -X ours 
         git push -u origin
 
