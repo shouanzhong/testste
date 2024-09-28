@@ -53,5 +53,5 @@ jobs:
       run: |
         git add file1.txt
         git commit -m "auto update"
-        git push -u origin shouanzhong-patch-test-workflow
+        git push -u origin
 
