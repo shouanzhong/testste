@@ -45,7 +45,6 @@ jobs:
         git config --local user.name "github"
         git remote set-url origin "https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}"
         echo git remote set-url origin "https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}"
-        git pull --rebase
 
     # 更新仓库
     - name: Update repo
@@ -54,5 +53,6 @@ jobs:
       run: |
         git add file1.txt
         git commit -m "auto update"
+        git pull --rebase
         git push -u origin
 
