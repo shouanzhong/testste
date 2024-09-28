@@ -35,7 +35,8 @@ jobs:
     - name: Create file
       run: |
         touch file1.txt
-        echo "This is file1.txt" > file1.txt # 如果需要，可以添加内容到文件
+        echo "This is file1.txt" >> file1.txt # 如果需要，可以添加内容到文件
+        echo $(date) >> file1.txt
 
       # 配置git
     - name: Config git
