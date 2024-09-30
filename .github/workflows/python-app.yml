@@ -5,12 +5,9 @@ name: Python application
 
 on:
   schedule:
-    - cron: '0 * * * *'
-  push:
-    branches: [ "shouanzhong-patch-test-workflow" ]
-  pull_request:
-    branches: [ "shouanzhong-patch-test-workflow" ]
-
+    # 每小时整点执行
+    - cron: "0 * * * *"
+    
 permissions:
   contents: write
 
